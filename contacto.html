@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img src="img/Gelato-Logo.jpg" alt="logo heladeria Gelato"
+      /></a>
+      <nav class="nav-links">
+        <a class="a-contact" href="productos.html">Productos</a>
+        <a class="a-contact" href="contacto.html">Contacto</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-search"></div>
+        <div class="fas fa-shopping-cart"></div>
+        <div class="fas fa-bars" id="menu-mobile"></div>
+      </div>
+    </header>
+    <main>
+      <section class="contact">
+        <h3>Contacto</h3>
+        <form
+          class="form"
+          name="contact-form"
+          action="index.html"
+          method="POST"
+        >
+          <input
+            type="text"
+            id="usuario"
+            name="name"
+            placeholder="Nombre y Apellido"
+          />
+          <div class="error hide">El campo es requerido.</div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Correo Electrónico"
+          />
+          <div class="error hide">El email es invalido.</div>
+          <input
+            type="number"
+            id="number"
+            name="phone"
+            placeholder="Teléfono"
+          />
+          <div class="error hide">El teléfono es invalido.</div>
+          <textarea placeholder="Deje su mensaje..." name="message"></textarea>
+          <div class="error hide">El campo es requerido.</div>
+          <div>
+            <button type="submit" value="Enviar">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Gelato® 2022</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
